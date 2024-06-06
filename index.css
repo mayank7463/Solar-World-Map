@@ -1,0 +1,466 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.title {
+    margin: 20px;
+}
+
+.world-map {
+    width: 100%;
+    max-width: 1300px;
+    height: auto; /* Limit the max size of the map */
+    position: relative;
+    overflow: hidden;
+    padding: 5px;
+    z-index: 1/* border: 1px solid red; */
+}
+
+.world-map .map-img {
+    width: 100%;
+    height: auto;
+}
+
+.about-map:hover{
+    transform: scale(1.1);
+}
+
+.about-map span{
+    display: none; /* Hide text by default */
+}
+
+.about-map:hover span{
+    display: block;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background:#ff0000;
+    color: #fff;
+    font-weight: 700;
+    padding: 7px;
+    border-radius: 5px;
+    border: 2px solid #FF0000;
+    white-space: nowrap;
+    z-index: 2147483647 /* Maximum effective z-index */
+}
+
+
+/* Keyframes Animation (pulse) */
+@keyframes pulse {
+    0% {
+      box-shadow: 0px 0px 0px 0px #FF0000;
+    }
+    100% {
+      box-shadow: 0px 0px 0px 7px rgba(5, 106, 180, 0.0);
+    }
+  }
+  
+  /* Rest of your existing CSS */
+  
+  .about-map {
+    position: absolute;
+    background: rgb(221, 3, 3);
+    color: white;
+    padding: 0.3vw;
+    border-radius: 70%;
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+    animation: pulse 2s infinite ease-out;
+    z-index: 2147483648
+}
+  
+.tool-1 {
+    top: 40%;
+    left: 73.5%
+}
+
+.tool-2 {
+    top: 41.5%;
+    left: 74%
+
+}
+.tool-3 {
+    top: 40.5%;
+    left: 69.5%
+
+}
+.tool-4 {
+    top: 41.5%;
+    left: 71%
+
+}
+.tool-5 {
+    top: 42.5%;
+    left: 72.5%
+}
+.tool-6 {
+    top: 45%;
+    left: 70%
+}
+.tool-7 {
+    top: 43%;
+    left: 73.5%
+}
+.tool-8 {
+    top: 49%;
+    left: 71.5%
+}
+.tool-9 {
+    top: 29%;
+    left: 55.5%
+}
+.tool-10 {
+    top: 62.5%;
+    left: 54.5%
+}
+.tool-11 {
+    top: 50%;
+    left: 45%
+}
+.tool-12 {
+    top: 83%;
+    left: 52%
+}
+.tool-13 {
+    top: 77%;
+    left: 90%;
+}
+.tool-14 {
+    top: 53%;
+    left: 43%
+}
+.tool-15 {
+    top: 63%;
+    left: 57%
+}
+
+.tool-16 {
+    top: 34%;
+    left: 24%
+}
+.tool-17 {
+    top: 33%;
+    left: 26%
+}
+.tool-18 {
+    top: 35%;
+    left: 23%
+}
+.tool-19 {
+    top: 36%;
+    left: 21%
+}
+.tool-20 {
+    top: 47%;
+    left: 35%
+}
+.tool-21 {
+    top: 48%;
+    left: 37%
+}
+.tool-22 {
+    top: 47%;
+    left: 39%;
+}
+.tool-23 {
+    top: 48%;
+    left: 41%
+}
+.tool-24 {
+    top: 60%;
+    left: 33%
+}
+.tool-25 {
+    top: 61%;
+    left: 34.5%
+}
+.tool-26 {
+    top: 60%;
+    left: 36%
+}
+.tool-27 {
+    top: 61%;
+    left: 38%
+}
+.tool-28 {
+    top: 60%;
+    left: 39%
+}
+.tool-29 {
+    top: 55%;
+    left: 45%
+}
+.tool-30 {
+    top: 56%;
+    left: 47%
+}
+.tool-31 {
+    top: 55%;
+    left: 48%
+}
+.tool-32 {
+    top: 56.5%;
+    left: 44%
+}
+.tool-33 {
+    top: 56%;
+    left: 49.5%
+}
+.tool-34 {
+    top: 50%;
+    left: 64%
+}
+.tool-35 {
+    top: 44%;
+    left: 55%
+}
+.tool-36 {
+    top: 45%;
+    left: 57%
+}
+.tool-37 {
+    top: 62%;
+    left: 55%
+}
+.tool-38 {
+    top: 64%;
+    left: 54%
+}
+.tool-39 {
+    top: 64%;
+    left: 52%
+}
+.tool-40 {
+    top: 82%;
+    left: 40%;
+}
+.tool-41 {
+    top: 83%;
+    left: 42%
+}
+.tool-42 {
+    top: 85%;
+    left: 40%
+} 
+.tool-43 {
+    top: 25%;
+    left: 12%
+}
+.tool-44 {
+    top: 60%;
+    left: 25%
+}
+.tool-45 {
+    top: 65%;
+    left: 25%;
+}
+.tool-46 {
+    top: 77%;
+    left: 21%;
+}
+.tool-47 {
+    top: 5%;
+    left: 59%;
+}
+.tool-48 {
+    top: 27%;
+    left: 68%;
+}
+.tool-49 {
+    top: 25%;
+    left: 79%;
+}
+.tool-50 {
+    top: 31%;
+    left: 87%;
+}
+.tool-51 {
+    top: 40%;
+    left: 84%;
+}
+.tool-52 {
+    top: 48%;
+    left: 87%;
+}
+.tool-53 {
+    top: 58%;
+    left: 85%;
+}
+.tool-54 {
+    top: 57%;
+    left: 80%;
+}
+.tool-55 {
+    top: 90%;
+    left: 97%;
+}
+.tool-56 {
+    top: 47%;
+    left: 81%;
+}
+.tool-57 {
+    top: 49%;
+    left: 81%;
+}
+.tool-58 {
+    top: 46%;
+    left: 80%;
+}
+.tool-59 {
+    top: 40%;
+    left: 75%;
+}
+.tool-60 {
+    top: 38%;
+    left: 74%;
+}
+.tool-61 {
+    top: 70%;
+    left: 67%;
+}
+.tool-62 {
+    top: 73%;
+    left: 60%;
+}
+.tool-63 {
+    top: 80%;
+    left: 52%;
+}
+.tool-64 {
+    top: 79%;
+    left: 54%;
+}
+.tool-65 {
+    top: 69%;
+    left: 58%;
+}
+.tool-66 {
+    top: 69%;
+    left: 54%;
+}
+.tool-67 {
+    top: 70%;
+    left: 56%;
+}
+.tool-68 {
+    top: 65%;
+    left: 58%;
+}
+.tool-69 {
+    top: 60%;
+    left: 58%;
+}
+.tool-70 {
+    top: 55%;
+    left: 59%;
+}
+.tool-71 {
+    top: 55%;
+    left: 49%;
+}
+.tool-72 {
+    top: 52%;
+    left: 41%;
+}
+.tool-73 {
+    top: 51%;
+    left: 42%;
+}
+.tool-74 {
+    top: 37%;
+    left: 46%;
+}
+.tool-75 {
+    top: 18%;
+    left: 52%;
+}
+.tool-76 {
+    top: 22%;
+    left: 55%;
+}
+.tool-77 {
+    top: 26%;
+    left: 53%;
+}
+.tool-78 {
+    top: 25%;
+    left: 50%;
+}
+.tool-79 {
+    top: 28%;
+    left: 51%;
+}
+.tool-80 {
+    top: 28%;
+    left: 52%;
+}
+.tool-81 {
+    top: 27%;
+    left: 49%;
+}
+.tool-82 {
+    top: 27%;
+    left: 50%;
+}
+.tool-83 {
+    top: 24%;
+    left: 54%;
+}
+.tool-84 {
+    top: 27%;
+    left: 54%;
+}
+.tool-85 {
+    top: 29%;
+    left: 53%;
+}
+.tool-86 {
+    top: 32%;
+    left: 53%;
+}
+.tool-87 {
+    top: 29%;
+    left: 58%;
+}
+.tool-88 {
+    top: 31%;
+    left: 58%;
+}
+.tool-89 {
+    top: 33%;
+    left: 58%;
+}
+.tool-90 {
+    top: 35%;
+    left: 59%;
+}
+.tool-91 {
+    top: 35%;
+    left: 57%;
+}
+.tool-92 {
+    top: 39%;
+    left: 59%;
+}
+.tool-93 {
+    top: 41%;
+    left: 61%;
+}
+.tool-94 {
+    top: 41%;
+    left: 63%;
+}
+.tool-95 {
+    top: 42%;
+    left: 64%;
+}
+ 
+
+
